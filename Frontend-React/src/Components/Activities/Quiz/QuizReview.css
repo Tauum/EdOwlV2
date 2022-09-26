@@ -1,0 +1,75 @@
+.quiz-review-main {
+  height: 100%;
+  all: none;
+  color: white;
+}
+
+.quiz-review-main .quiz-review-container {
+  margin-top: 10em;
+  margin-left: 3em;
+  margin-right: 3em;
+  background: #0765c3;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0765c3), to(#004890));
+  background: linear-gradient(0deg, #0765c3 0%, #004890 100%);
+  margin-bottom: 2em;
+  border-radius: 2em;
+  border-radius: 1em;
+  -webkit-box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+}
+
+.quiz-review-main .quiz-review-container h1 {
+  padding-top: 2em;
+}
+
+.quiz-review-main .quiz-review-container .review-question-list {
+  padding-bottom: 3em;
+  margin-bottom: 5em;
+}
+
+.quiz-review-main .quiz-review-container .review-question-list .review-question-entries {
+  background: #c28829;
+  background: -webkit-gradient(linear, left bottom, left top, from(#c28829), to(#fcb134));
+  background: linear-gradient(0deg, #c28829 0%, #fcb134 100%);
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-bottom: 4em;
+  padding: 1em;
+  border-radius: 2em;
+  -webkit-transition: -webkit-transform .6s;
+  transition: -webkit-transform .6s;
+  transition: transform .6s;
+  transition: transform .6s, -webkit-transform .6s;
+  /* Animation */
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.quiz-review-main .quiz-review-container .review-question-list .review-question-entries:hover {
+  -webkit-transition: -webkit-transform .6s;
+  transition: -webkit-transform .6s;
+  transition: transform .6s;
+  transition: transform .6s, -webkit-transform .6s;
+  /* Animation */
+  -webkit-transform: scale(1.19);
+          transform: scale(1.19);
+}
+
+@media only screen and (min-width: 770px) {
+  .quiz-review-main .quiz-review-container {
+    margin-left: 10em;
+    margin-right: 10em;
+  }
+  .quiz-review-main .quiz-review-container .review-question-entries {
+    margin-left: 20em;
+    margin-right: 20em;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .quiz-review-main .quiz-review-container {
+    margin-left: 20em;
+    margin-right: 20em;
+  }
+}
+/*# sourceMappingURL=QuizReview.css.map */

@@ -1,0 +1,23 @@
+.qr-code-button{
+
+    &:hover{
+        border: 1px solid white;
+    }
+
+}
+
+.qr-code-image-container{
+    background: var(--GradientMediumGray);
+    width: 170px;
+    height: 170px;
+    margin: 1em auto;
+    border-radius: 1em;
+
+    .qr-code-image{
+        vertical-align: middle;
+        margin: 1em auto;
+        width: 140px;
+        height: 140px;
+        border-radius:1em;
+    }
+}

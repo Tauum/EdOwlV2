@@ -1,0 +1,31 @@
+.test-test {
+    box-sizing: border-box;
+    position: relative;
+    margin: 10px;
+    border-left: 3px solid;
+    border-bottom: 3px solid;
+    height: 250px;
+    width: 400px;
+    line-height: 20px;
+    background: linear-gradient(90deg, yellow 50%, transparent 50%), linear-gradient(0deg, pink 50%, transparent 50%);
+    
+    background-size: 100% 3px, 3px 100%;
+    background-position: 0px 0px, 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .test-test:before {
+    position: relative;
+    float: right;
+    right: 0px;
+    top: 0px;
+    content: '';
+    background: transparent;
+    height: 50%;
+    width: 50%;
+    border-left: white 3px solid;
+    border-bottom: green 3px solid;
+  }
+  p {
+    display: block;
+    padding: 8px 8px;
+  }
