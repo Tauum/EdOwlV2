@@ -1,14 +1,14 @@
 # UPDATING THE APP IS THE FOLLOWING:
 
-# publising frontend application to github.
+# Publising to github.
 
 1. Create repository on github.com
-2. In terminal inside react project `git remote add origin <url to github repo>` (`https://github.com/Tauum/EdOwlV2`)
+2. In terminal inside parent dir `git remote add origin <url to github repo>` (`https://github.com/Tauum/EdOwlV2`)
 3. Unsure what this does `git add .` 
 4. Add commit `git commit -m <name of update>`
 5. push everything `git push -u origin master` or `git push -u origin master --force` (be careful this overwrites everything)
 
-# to frontend application pull from github
+# Pulling from github
 
 1. `git clone <url to github repo>` (`https://github.com/Tauum/EdOwlV2`)
 2. `cd /<project name>`
