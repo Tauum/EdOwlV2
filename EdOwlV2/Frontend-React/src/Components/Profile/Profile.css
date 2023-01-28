@@ -1,0 +1,514 @@
+.all-profile-contents {
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.profile-frame-container {
+  text-align: center;
+  background: var(--GradientRoundWhite);
+  margin-top: 20em;
+  margin-bottom: 20em;
+  border-radius: 3em;
+  box-shadow: 0px 15px 110px rgb(66, 65, 65);
+}
+.profile-frame-container .userPicture {
+  z-index: 2;
+  padding: 1em;
+  width: 15em;
+  height: 15em;
+  border: 5px solid rgb(233, 233, 233);
+  border-radius: 50%;
+  margin-top: -10em;
+  background: var(--GradientRoundWhite);
+  transform: scale(1);
+  transition: transform 0.6s;
+}
+.profile-frame-container .userPicture:hover {
+  background: var(--GradientRoundYellow2);
+  box-shadow: 0px -3px 15px rgb(66, 65, 65);
+  transition: transform 0.6s;
+  transform: scale(1.1);
+}
+.profile-frame-container h2 {
+  font-size: 30px;
+}
+.profile-frame-container .profile-top > * {
+  bottom: 4em;
+  padding: 1em;
+  z-index: 1;
+  position: relative;
+  margin-bottom: 0.2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  transition: transform 0.6s;
+}
+.profile-frame-container .profile-top .profie-id {
+  border-top-left-radius: 2em;
+  float: left;
+  margin-left: 2em;
+  width: 120px;
+}
+.profile-frame-container .profile-top .profie-id:hover {
+  cursor: url("/public/Image/round-cursor.png") 30 30, auto;
+}
+.profile-frame-container .profile-top .profie-edit {
+  border-top-right-radius: 2em;
+  float: right;
+  margin-right: 2em;
+  padding-left: 2.35em;
+}
+.profile-frame-container .profile-information {
+  position: relative;
+  top: -50px;
+}
+.profile-frame-container .profile-information .profile-dates {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.profile-frame-container .profile-information .profile-dates > * {
+  z-index: 5;
+  max-width: 142px;
+  min-width: 142px;
+  display: flex;
+  height: 90px;
+  background: #9FA6B2;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  transition: transform 0.6s;
+}
+.profile-frame-container .profile-information .profile-dates > * .profile-dates-text {
+  font-size: 0.95em;
+}
+.profile-frame-container .profile-information .profile-dates > *:hover {
+  transition: transform 0.6s;
+  transform: scale(1.05);
+}
+.profile-frame-container .profile-information .profile-dates > *:hover .profile-dates-text {
+  font-weight: 900;
+}
+.profile-frame-container .profile-information .profile-dates .profie-created-on {
+  margin-left: 2.2em;
+  border-bottom-right-radius: 2em;
+}
+.profile-frame-container .profile-information .profile-dates .profie-dob {
+  border-bottom-left-radius: 2em;
+  margin-right: 0.6em;
+}
+.profile-frame-container .profile-information .profile-main-content {
+  position: relative;
+  top: -120px;
+}
+.profile-frame-container .profile-information .profile-names > * {
+  text-align: center;
+}
+.profile-frame-container .profile-information .profile-info-row {
+  margin: 2em;
+  margin-top: 2em;
+  display: block;
+}
+.profile-frame-container .profile-information .profile-info-row .profile-row-header {
+  color: white;
+  max-width: 200px;
+  margin: 0 auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-weight: bold;
+  border: 5px solid var(--LightGray);
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  margin-bottom: -0.1em;
+  border-bottom: 0;
+  text-align: center;
+}
+.profile-frame-container .profile-information .profile-info-row .profile-row-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+  flex-grow: 1;
+  max-width: 800px;
+  border-radius: 2em;
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.profile-frame-container .profile-information .profile-info-row .profile-row-content-element {
+  border-radius: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  transform: scale(1);
+  transition: transform 0.6s;
+  margin: 1em auto;
+  font-size: 0.8em;
+}
+.profile-frame-container .profile-information .profile-info-row .profile-row-content-element:hover {
+  transition: transform 0.6s;
+  transform: scale(1.05);
+}
+.profile-frame-container .profile-information .profile-info-row-2 .profile-row-header {
+  background: var(--LightBlueBlendForGradient2);
+}
+.profile-frame-container .profile-information .profile-info-row-2 .profile-roles {
+  background: var(--GradientRoundLighterBlueReversed);
+}
+.profile-frame-container .profile-information .profile-info-row-2 .profile-roles .profile-role {
+  background: var(--GradientRoundWhite);
+  max-width: 150px;
+}
+.profile-frame-container .profile-information .profile-info-row-2 .profile-roles .profile-role .profile-role-text {
+  margin-bottom: 0;
+}
+.profile-frame-container .profile-information .profile-info-row-2 .profile-roles .profile-role .role-icon {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 1em;
+}
+.profile-frame-container .profile-information .profile-info-row-3 .profile-row-header {
+  background: var(--GradientYellowBlendForGradient2);
+}
+.profile-frame-container .profile-information .profile-info-row-3 .profile-modules {
+  background: var(--GradientRoundYellow2);
+  max-height: 352px;
+  overflow-y: scroll;
+}
+.profile-frame-container .profile-information .profile-info-row-3 .profile-modules .profile-module {
+  background: var(--GradientRoundWhite);
+  margin: 1em;
+  min-width: 130px;
+}
+.profile-frame-container .profile-information .profile-info-row-4 .profile-badges-header {
+  background: var(--LightBlueBlendForGradient2);
+  max-width: 220px;
+  font-size: 1.3em;
+  border-top-left-radius: 3em;
+  border-top-right-radius: 3em;
+}
+.profile-frame-container .profile-information .profile-info-row-4 .profile-badges {
+  background: var(--GradientRoundLighterBlueReversed);
+  overflow-y: scroll;
+}
+.profile-frame-container .profile-information .profile-info-row-4 .profile-badges .profile-badge {
+  background: var(--GradientRoundWhite);
+  min-width: 130px;
+  min-height: 190px;
+  margin: 1em;
+}
+.profile-frame-container .profile-information .profile-info-row-5 {
+  margin: 2em;
+  margin-top: 2em;
+  display: block;
+}
+.profile-frame-container .profile-information .profile-info-row-5 .profile-statistics-header {
+  background: var(--GradientYellowBlendForGradient2);
+  max-width: 220px;
+  font-size: 1.3em;
+  border-top-left-radius: 3em;
+  border-top-right-radius: 3em;
+}
+.profile-frame-container .profile-information .profile-info-row-5 .profile-statistics {
+  background: var(--GradientRoundYellow2);
+  overflow-y: scroll;
+}
+.profile-frame-container .profile-information .profile-info-row-5 .profile-statistics .profile-statistic {
+  background: var(--GradientRoundWhite);
+  margin: 1em;
+  min-width: 130px;
+  min-height: 190px;
+}
+
+.badges {
+  position: relative;
+  top: -150px;
+  box-shadow: 0px 0px 50px rgb(87, 87, 87);
+  margin: 2em;
+  margin-top: 2em;
+  margin-bottom: 5em;
+  min-height: 15em;
+  border-radius: 3em;
+  padding-bottom: 1em;
+  border-radius: 3em;
+  padding-bottom: 2em;
+  background: rgb(7, 102, 197);
+  background: linear-gradient(0deg, rgb(7, 101, 195) 0%, rgb(0, 72, 144) 100%);
+}
+.badges h3 {
+  padding-top: 1em;
+  color: white;
+}
+.badges .badge {
+  margin: 2em;
+  width: 11em;
+  height: 11em;
+  background-color: rgb(224, 224, 224);
+  border-radius: 1.5em;
+}
+.badges .badge .emoj {
+  width: 8em;
+  height: 8em;
+  margin-top: 0.1em;
+}
+.badges .badge:hover {
+  box-shadow: 0px 0px 35px rgb(19, 43, 121);
+}
+.badges .badge-description {
+  width: 9.3em;
+  height: 9em;
+  margin: 0;
+  color: black;
+}
+
+.stats-summary {
+  box-shadow: 0px 0px 50px rgb(124, 124, 124);
+  background: rgb(194, 136, 41);
+  background: linear-gradient(0deg, rgb(194, 136, 41) 0%, rgb(252, 177, 52) 100%);
+  border-radius: 3em;
+  padding-bottom: 1em;
+}
+.stats-summary .statistics-carousel {
+  border-radius: 1em;
+  height: 24em;
+}
+.stats-summary .statistics-carousel a {
+  width: 60px;
+}
+.stats-summary h3 {
+  color: white;
+  text-align: center;
+}
+.stats-summary .badge {
+  padding: 0;
+  border-radius: 1.5em;
+  width: 16em;
+  height: 16em;
+  margin: 0;
+  margin-top: 2.5em;
+  background-color: rgb(224, 224, 224);
+}
+.stats-summary .badge:hover {
+  box-shadow: 0px 0px 35px rgb(19, 43, 121);
+}
+.stats-summary .badge .emoj {
+  background: rgb(1, 126, 207);
+  background: linear-gradient(0deg, rgb(1, 126, 207) 0%, rgb(1, 147, 207) 100%);
+  width: 11em;
+  height: 11em;
+  margin: 2.5em;
+}
+
+@media only screen and (max-width: 800px) {
+  .profile-frame-container {
+    margin-top: 10em;
+    margin-bottom: 10em;
+  }
+  .profile-frame-container .userPicture {
+    transform: scale(0.7, 0.7);
+    margin-top: -8.8em;
+    transition: transform 0.6s;
+  }
+  .profile-frame-container .userPicture:hover {
+    transform: scale(0.75);
+  }
+  .profile-frame-container .profile-top > * {
+    bottom: 5em;
+    padding: 1em;
+    max-width: 120px;
+    min-width: 120px;
+    max-height: 69px;
+  }
+  .profile-frame-container .profile-dates {
+    position: relative;
+    top: -15px;
+  }
+  .profile-frame-container .profile-dates > * {
+    max-width: 100px;
+    min-width: 100px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .profile-frame-container .profile-information .profile-info-row-1 {
+    margin-top: 2em;
+    display: inline-block;
+  }
+  .profile-frame-container .profile-information .profile-info-row-2 .profile-roles .profile-role {
+    transform: scale(0.9);
+  }
+  .profile-frame-container .profile-information .profile-info-row-2 .profile-roles .profile-role:hover {
+    transform: scale(0.95);
+  }
+}
+@media only screen and (max-width: 650px) {
+  .profile-frame-container .profile-information .profile-main-content {
+    top: -50px;
+  }
+  .profile-frame-container .profile-information .profile-main-content .profile-role-header {
+    position: relative;
+    top: -20px;
+  }
+  .profile-frame-container .profile-information .profile-main-content .profile-roles {
+    position: relative;
+    top: -20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .profile-frame-container .profile-top .profile-edit {
+    padding-left: 0;
+  }
+  .profile-frame-container .profile-top > * {
+    max-width: 85px;
+    min-width: 85px;
+  }
+  .profile-frame-container .profile-top > :last-child {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .profile-frame-container .profile-information .profile-dates {
+    top: -15px;
+  }
+  .profile-frame-container .profile-information .profile-dates > * {
+    max-width: 100px;
+    min-width: 100px;
+  }
+  .profile-frame-container .profile-information .profile-info-row-2 {
+    margin: 1em;
+  }
+  .profile-frame-container .profile-information .profile-info-row-2 .profile-row-header {
+    background: var(--LightBlueBlendForGradient3);
+  }
+  .profile-frame-container .profile-information .profile-info-row-2 .profile-role {
+    min-width: 90px;
+    transform: scale(0.8);
+    font-size: 0.7em;
+  }
+  .profile-frame-container .profile-information .profile-info-row-2 .profile-role:hover {
+    transform: scale(0.85);
+  }
+  .profile-frame-container .profile-information .profile-info-row-3 .profile-row-header {
+    background: var(--AlternateYellow);
+  }
+  .profile-frame-container .profile-information .profile-info-row-5 .profile-row-header {
+    background: var(--AlternateYellow);
+  }
+  .profile-roles {
+    display: block;
+    flex: 1;
+    flex-grow: 1;
+    background: var(--GradientRoundLighterBlueReversed);
+    border-radius: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .profile-roles .profile-role {
+    border-radius: 2em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    background: var(--GradientRoundWhite);
+    margin: 0 auto;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    max-width: 150px;
+  }
+  .profile-roles .profile-role .role-icon {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .profile-frame-container {
+    margin-top: 12em;
+    margin-bottom: 0;
+  }
+  .profile-frame-container .userPicture {
+    transform: scale(0.65, 0.65);
+    margin-left: 8px;
+    margin-top: -8.8em;
+    transition: transform 0.6s;
+    /* Animation */
+    position: relative;
+    bottom: 2em;
+  }
+  .profile-frame-container .userPicture:hover {
+    transform: scale(0.7);
+  }
+  .profile-frame-container .profile-top .profile-edit {
+    padding-left: 0;
+  }
+  .profile-frame-container .profile-top > * {
+    max-width: 80px;
+    min-width: 80px;
+    top: -7em;
+    font-size: 13px;
+    transition: transform 0.6s;
+  }
+  .profile-frame-container .profile-top > *:hover {
+    transition: transform 0.6s;
+    transform: scale(1.3);
+  }
+  .profile-frame-container .profile-top > :first-child {
+    right: 0.4em;
+  }
+  .profile-frame-container .profile-top > :last-child {
+    left: 0.4em;
+  }
+  .profile-frame-container .profile-information .profile-dates {
+    top: -30px;
+  }
+  .profile-frame-container .profile-information .profile-dates > * {
+    transform: scale(0.9, 0.9);
+    transition: transform 0.6s;
+  }
+  .profile-frame-container .profile-information .profile-dates > *:hover {
+    transform: scale(0.95);
+    transition: transform 0.6s;
+  }
+  .profile-frame-container .profile-information .profile-dates .profie-created-on {
+    margin-left: 1.5em;
+  }
+  .profile-frame-container .profile-information .profile-dates .profie-dob {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .profile-frame-container .userPicture {
+    transform: scale(0.65, 0.65);
+    transition: transform 0.6s;
+    /* Animation */
+  }
+  .profile-frame-container .userPicture:hover {
+    transform: scale(0.7);
+  }
+  .profile-frame-container .profile-information .profile-info-row .profile-row-header {
+    max-width: 150px;
+    font-size: 1.2em;
+  }
+  .profile-frame-container .profile-information .profile-info-row-1 {
+    margin-top: -2em;
+    display: inline-block;
+  }
+  .profile-frame-container .profile-information .profile-info-row-2 {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .profile-frame-container .profile-information .profile-info-row-2 .profile-role-header {
+    background: var(--LightBlueBlendForGradient4);
+  }
+  .profile-frame-container .profile-information .profile-info-row-2 .profile-roles .profile-role {
+    font-size: 0.7em;
+    padding: 0.5em;
+  }
+  .profile-frame-container .profile-information .profile-info-row-4 .profile-badges-header {
+    background: var(--LightBlueBlendForGradient4);
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .profile-frame-container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .profile-frame-container {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}/*# sourceMappingURL=Profile.css.map */

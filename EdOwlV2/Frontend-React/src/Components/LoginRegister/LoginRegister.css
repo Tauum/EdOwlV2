@@ -1,0 +1,128 @@
+.login-register {
+  background: var(--GradientRoundLighterBlue);
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.login-register .all {
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 15px;
+  padding: 30px;
+  padding-bottom: 25px;
+  background: var(--GradientRoundWhite);
+  width: 40%;
+  min-width: 305px;
+  max-width: 500px;
+}
+.login-register .all .login-logo {
+  margin-top: 0;
+  margin-bottom: 5px;
+  background: var(--GradientYellow);
+  padding: 10px;
+  border-radius: 2.5em;
+  width: 175px;
+  height: 160px;
+}
+.login-register .all .note {
+  text-align: center;
+}
+
+.login {
+  margin: 2px;
+}
+
+.login-input {
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+  text-align: center;
+  border: 4px outset rgb(175, 175, 175);
+}
+
+.login-form {
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.form-check-input {
+  margin-top: 1em;
+}
+
+label {
+  font-size: 1.2em;
+  margin-top: 1.2em;
+}
+
+.instructions {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+}
+
+.instructions > svg {
+  margin-right: 0.25rem;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 0.4em;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+
+.line {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 500px) {
+  label {
+    /* font-size:em; */
+    margin-top: 0.4rem;
+  }
+  .email-login {
+    margin-bottom: 0;
+  }
+  .other-login-reduction {
+    max-height: 200px;
+  }
+}/*# sourceMappingURL=LoginRegister.css.map */
