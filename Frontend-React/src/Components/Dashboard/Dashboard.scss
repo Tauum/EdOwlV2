@@ -1,0 +1,580 @@
+.dashboard {
+    overflow: hidden;
+    height: 89vh;
+    margin: 0 auto;
+    margin-top: 4em;
+    max-width: 1600px;
+
+    .dashboard-element-heading {
+        padding-top: 0.5em;
+    }
+
+    .note {
+        text-align: center;
+    }
+
+    .dashboard-list {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0;
+
+        li {
+            style: none;
+        }
+
+        .dashboard-row-1 {
+            z-index: 1;
+        }
+
+        .dashboard-row-2 {
+            z-index: 1;
+            bottom: 270px;
+        }
+    }
+
+    li {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+}
+
+.dashboard-row-1 {
+    z-index: 1;
+    display: flex;
+}
+
+.dashboard-row-2 {
+    z-index: 1;
+    position: relative;
+    bottom: 270px;
+    display: flex;
+}
+
+.dashboard-element {
+    min-height: 363px;
+    background: var(--GradientRoundWhite);
+    margin: 1em;
+    text-align: center;
+    padding: 1em;
+}
+
+.dashboard-element-center {
+    background: var(--GradientRoundWhite);
+    height: 245px;
+    margin: 0.5em;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.top-left-element {
+    clip-path: polygon(50% 0, 100% 0, 100% 65%, 83% 65%, 83% 100%, 0 100%, 0 0);
+    text-align: center;
+    border-radius: 15px;
+
+    .activity-submit {
+        position: absolute;
+        bottom: 10px;
+        left: 15px;
+    }
+}
+
+.top-right-element {
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 17% 100%, 17% 65%, 0 65%, 0 0);
+    text-align: center;
+    border-radius: 15px;
+
+    .article-submit {
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+    }
+
+}
+
+.bottom-left-element {
+    clip-path: polygon(0% 0%, 83% 0, 83% 35%, 100% 35%, 100% 100%, 50% 100%, 0 100%);
+    text-align: center;
+    border-radius: 15px;
+
+    h4 {
+        margin-right: 1em;
+    }
+
+    .modules-text {
+        margin-right: 2em;
+
+    }
+
+    .module-submit {
+        right: 20px;
+        bottom: 10px;
+        position: absolute;
+    }
+      
+
+}
+
+.bottom-right-element {
+    clip-path: polygon(17% 0, 100% 0%, 100% 75%, 100% 100%, 0 100%, 0 35%, 17% 35%);
+    text-align: center;
+    border-radius: 15px;
+    align-items: center;
+
+    h4 {
+        margin-left: 1.5em;
+    }
+
+    .stats-text {
+        margin-left: 1.5em;
+        margin-top: 7em;
+    }
+
+    .stats-submit {
+        left: 20px;
+        bottom: 10px;
+        position: absolute;
+    }
+}
+
+.top-center-element {
+    .profile-info {
+        .profile-preview-text {
+            text-align: left;
+            left: 30px;
+            position: absolute;
+            padding-top: 0.2em;
+
+            .profile-preview-line {
+                margin: 0.6em;
+            }
+        }
+
+        .profile-img {
+            position: absolute;
+            bottom: 50px;
+            right: 30px;
+            border-radius: 2em;
+            width: 140px;
+            padding: 5px;
+            height: 140px;
+            border: 5px outset rgb(175, 175, 175);
+        }
+
+        .profile-submit {
+            position: absolute;
+            background-color: rgb(221, 77, 192);
+            left: 30px;
+            bottom: 20px;
+            margin: 0;
+        }
+    }
+}
+
+.bottom-center-element {
+    position: relative;
+    top: 120px;
+    margin-top: 1em;
+
+    .feedback-form {
+        margin-top: 1em;
+
+        .feedback-text {
+            width: 90%;
+            min-height: 85px;
+            border: 5px outset rgb(175, 175, 175);
+            border-radius: 15px;
+        }
+
+        .feedback-submit {
+            bottom: 0;
+            position: relative;
+        }
+    }
+}
+
+
+.dashboard-middle-element-center {
+    z-index: 99;
+    position: relative;
+    bottom: 120px;
+    max-width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background: var(--GradientRoundWhite);
+    width: 40%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+
+@media only screen and (max-width: 1180px) {
+    .top-center-element {
+        .profile-info {
+            .profile-img {
+                display: none;
+            }
+
+            .profile-preview-text {
+                text-align: center;
+                position: relative;
+                left: 0;
+            }
+
+            .profile-submit {
+                position: relative;
+                left: 0;
+                bottom: 0;
+                margin-top: 2.2em;
+                background-color: rgb(221, 77, 192);
+                bottom: 25px;
+            }
+        }
+
+    }
+
+    .dashboard-row-1 {
+        margin: 0.1em;
+    }
+
+    .dashboard-row-2 {
+        margin: 0.1em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .dashboard-row-1 * {
+        transform: scale(0.95, 0.95);
+    }
+
+    .dashboard-row-2 * {
+        transform: scale(0.95, 0.95);
+    }
+
+    .dashboard-middle-element-center {
+        transform: scale(0.9, 0.9);
+
+        &:hover {
+            transform: scale(0.85, 0.85);
+            transition: transform .6s;
+            transform: scale(0.95);
+        }
+    }
+
+    .dashboard-element {
+        margin: 0.1em;
+    }
+
+    .dashboard-element-center {
+        margin: 0.03em;
+    }
+
+    .dashboard-middle-element-center {
+        padding: 1em;
+    }
+
+    .bottom-center-element {
+        position: relative;
+        top: 120px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    // make everything go in seperate rows
+    // center every child element
+    // make dashboard row first element
+    // modules second
+    // activities third
+    // article fourth
+    // profile fifth
+    // stats sixth
+    // feedback seventh
+    .dashboard {
+        height: 100vh;
+        overflow: visible;
+        margin: 0 auto;
+        margin-top: 5em;
+
+        .dashboard-row-1 {
+            display: block;
+        }
+
+        .dashboard-row-2 {
+            position: relative;
+            display: block;
+        }
+
+        .dashboard-row-1 * {
+            transform: scale(1, 1);
+        }
+
+        .dashboard-row-2 * {
+            transform: scale(1, 1);
+        }
+
+        .dashboard-element {
+            min-height: 320px;
+            margin: 1.5em;
+            margin-bottom: 3em;
+        }
+
+        .dashboard-element-center {
+            min-height: 320px;
+            margin: 1.5em;
+            margin-bottom: 3em;
+        }
+
+        .top-left-element {
+            clip-path: none;
+            text-align: center;
+
+            .activity-submit {
+                position: relative;
+                left: 30%;
+                bottom: 0;
+                top: 160px;
+                margin: 0;
+                margin-top: 20px;
+            }
+
+            &:hover {
+                transform: scale(1.05, 1.05);
+                transition: transform .6s;
+                transform: scale(1.05);
+            }
+        }
+
+        .top-right-element {
+            clip-path: none;
+            text-align: center;
+
+            .article-submit {
+                position: relative;
+                right: 0;
+
+                &:hover {
+                    transform: scale(1.06, 1.06);
+                    transition: transform .6s;
+                    transform: scale(1.06);
+                }
+            }
+
+            &:hover {
+                transform: scale(1.05, 1.05);
+                transition: transform .6s;
+                transform: scale(1.05);
+            }
+        }
+
+        .bottom-left-element {
+            clip-path: none;
+            text-align: center;
+
+            h4 {
+                margin-right: 0;
+            }
+
+            .modules-text {
+                margin-right: 0;
+            }
+
+            .module-submit {
+                right: 0;
+                position: relative;
+
+                &:hover {
+                    transform: scale(1.06, 1.06);
+                    transition: transform .6s;
+                    transform: scale(1.06);
+                }
+            }
+
+            &:hover {
+                transform: scale(1.05, 1.05);
+                transition: transform .6s;
+                transform: scale(1.05);
+            }
+        }
+
+        .bottom-right-element {
+            clip-path: none;
+            text-align: center;
+
+            h4 {
+                margin-left: 0;
+            }
+
+            .stats-text {
+                margin-left: 0;
+            }
+
+            .stats-submit {
+                left: 0;
+                position: relative;
+
+                &:hover {
+                    transform: scale(1.06, 1.06);
+                    transition: transform .6s;
+                    transform: scale(1.06);
+                }
+            }
+
+            &:hover {
+                transform: scale(1.05, 1.05);
+                transition: transform .6s;
+                transform: scale(1.05);
+            }
+        }
+
+
+        .top-center-element {
+
+            .profile-preview-text {
+                text-align: left;
+                left: 30px;
+                bottom: 90px;
+
+                .profile-preview-line {
+                    margin: 0.6em;
+                }
+            }
+
+            .profile-info {
+
+                .profile-img {
+                    display: inline-block;
+                    position: relative;
+                    top: 15px;
+                    left: 25%;
+                    border-radius: 2em;
+                    right: 30px;
+                    width: 100px;
+                    padding: 5px;
+                    height: 100px;
+                }
+
+                .profile-submit {
+                    position: relative;
+                    left: 30%;
+                    bottom: 0;
+                    margin: 0;
+                    margin-top: 20px;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.05, 1.05);
+                transition: transform .6s;
+                transform: scale(1.05);
+            }
+        }
+
+        .bottom-center-element {
+            position: relative;
+            top: 0;
+
+            .feedback-form {
+
+                .feedback-text {
+                    width: 90%;
+                }
+
+                .feedback-submit {
+                    bottom: 0;
+                    position: relative;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.05, 1.05);
+                transition: transform .6s;
+                transform: scale(1.05);
+            }
+        }
+
+        .dashboard-middle-element-center {
+            display: block;
+            width: 95%;
+            margin-bottom: 3em;
+        }
+
+    }
+
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .dashboard {
+        height: auto;
+        overflow: visible;
+        margin: 0 auto;
+        margin-top: 5em;
+
+        .top-center-element {
+
+            .profile-preview-text {
+                text-align: center;
+                left: 0;
+                bottom: 0;
+                top: 25px;
+
+                .profile-preview-line {
+                    margin: 0.6em;
+                }
+            }
+
+            .profile-info {
+
+                .profile-img {
+                    top: 15px;
+                    left: 0;
+                }
+
+                .profile-submit {
+                    position: relative;
+                    left: 30%;
+                    bottom: 0;
+                    margin: 0;
+                    margin-top: 20px;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.05, 1.05);
+                transition: transform .6s;
+                transform: scale(1.05);
+            }
+        }
+
+        
+
+    }
+
+}
+
+@media only screen and (max-width: 345px) {
+    .dashboard {
+    .top-left-element {
+        clip-path: none;
+        text-align: center;
+
+        .activity-submit {
+            position: relative;
+            left: 25%;
+            bottom: 0;
+            top: 130px;
+            margin: 0;
+        }
+
+        &:hover {
+            transform: scale(1.05, 1.05);
+            transition: transform .6s;
+            transform: scale(1.05);
+        }
+    }
+    }
+}

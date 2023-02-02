@@ -1,0 +1,35 @@
+.error-page {
+  background: var(--GradientRoundLighterBlue);
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.error-page .error-content {
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 15px;
+  padding: 30px;
+  padding-bottom: 25px;
+  background: var(--GradientRoundWhite);
+  width: 40%;
+  min-width: 305px;
+  max-width: 500px;
+}
+.error-page .FaFrown {
+  color: rgb(252, 177, 52);
+}
+
+@media only screen and (max-width: 500px) {
+  label {
+    /* font-size:em; */
+    margin-top: 0.4rem;
+  }
+  .email-login {
+    margin-bottom: 0;
+  }
+  .other-login-reduction {
+    max-height: 200px;
+  }
+}/*# sourceMappingURL=Error.css.map */
