@@ -1,0 +1,153 @@
+.extra-container {
+  color: white;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.extras-list {
+  padding-bottom: 8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  max-width: 1200px;
+  margin: 2em auto;
+}
+
+.extras-list .card {
+  margin-top: 3em;
+  max-width: 400px;
+  text-align: center;
+}
+
+.extras-list .articlediv {
+  border-radius: 1em;
+  color: black;
+  margin: 1em auto;
+  width: 350px;
+  background-color: white;
+}
+
+.extras-list .articlediv:hover {
+  border: 1px solid white;
+}
+
+.extras-list .articlediv:hover .card-title {
+  font-weight: bold;
+}
+
+.extras-list .articlediv .card-footer {
+  border-radius: 1em;
+}
+
+.views-icon {
+  position: relative;
+  top: -2px;
+  width: 25px;
+}
+
+.extra-button {
+  margin-bottom: 2em;
+}
+
+.extra-missing-content {
+  margin-top: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.extra-header {
+  padding-top: 2em;
+  margin-bottom: 1em;
+}
+
+.extra-search .extra-refine {
+  text-align: center;
+  background-color: white;
+  padding: .8em;
+  margin: 1em;
+  border-radius: 1em;
+  border: 5px outset #afafaf;
+  width: 210px;
+  font-size: 18px;
+}
+
+.extra-modules {
+  max-height: 350px;
+}
+
+.extra-modal .video {
+  width: 400px;
+  height: 225px;
+  overflow: hidden;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+
+.extra-modal .extra-content {
+  border-radius: 1em;
+  margin: 1em;
+  max-height: 270px;
+  overflow: scroll;
+}
+
+.extra-modal .extra-content .extra-content-text {
+  color: black;
+  font-size: 17px;
+}
+
+.extra-modal .extra-article-description {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 500px) {
+  .extra-missing-content {
+    margin-top: 2em;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .extras-list .articlediv {
+    max-width: 80%;
+  }
+  .extra-modal .extra-modal-sub-header {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+  .extra-modal .extra-modal-summary {
+    font-size: 16px;
+  }
+  .extra-modal .video {
+    width: 90%;
+    overflow: hidden;
+  }
+  .extra-modal .extra-content {
+    border-radius: 1em;
+    margin: 1em;
+    max-height: 200px;
+    overflow: scroll;
+  }
+  .extra-modal .extra-content .extra-content-text {
+    color: black;
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .extra-missing-content {
+    margin-top: 2em;
+    margin-left: 15em;
+    margin-right: 15em;
+  }
+}
+/*# sourceMappingURL=Extra.css.map */

@@ -1,0 +1,77 @@
+.swipe{
+  font-family: Quicksand;
+  width: 100vh;
+  height: 100vh;
+  background: none repeat ;
+  /* overflow: hidden;
+  position: fixed; */
+  background: var(--GradientLighterBlue);
+}
+
+.swipe-img{
+  overflow: hidden;
+  object-fit: fill;
+  max-height:350px;
+  max-width:100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.swipe-question-wo-image{
+  margin-top: 5em,;
+  display: inline-block;
+  margin-right: 10px;
+}
+.swipe-question{
+  display: inline-block;
+  margin-right: 10px;
+}
+.swipe-sub-text{
+  text-align: center;
+  color: darkgray;
+}
+
+.swipe-card-animated-parent {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 
+.card{
+  background: yellow;
+} */
+
+.swipe-card-animated-child{
+  /* padding: 5px; */
+  border: 5px solid rgb(224, 224, 224);
+  /* background-color: var(--LighterYellow); */
+  background-color: rgb(224, 224, 224);
+  
+  background-size: auto 85%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 45vh;
+  max-width: 300px;
+  height: 550px;
+  max-height: 570px;
+  will-change: transform;
+  border-radius: 10px;
+  box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4),
+    0 10px 10px -10px rgba(50, 50, 73, 0.3);
+}
+
+
+@media only screen and (max-width: 500px) {
+  .swipe{
+    overflow: hidden;
+    position: fixed;
+  }
+ 
+}
+
+
+  
