@@ -8,11 +8,13 @@ import HowToAdopt from './FAQ/HowToAdopt'
 import TakingPart from './FAQ/TakingPart'
 import HowEdOwl from './FAQ/HowEdOwl'
 import EdOwlModel from './FAQ/EdOwlModel'
+import WhySignedOut from './FAQ/WhySignedOut'
 
 function FAQ() {
     return (
         <div className="faq">
             <h2>FAQ</h2>
+            <WhySignedOut/>
             <WhatIs/>
             <TakingPart/>
             <HowFunded/>

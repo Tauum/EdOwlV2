@@ -19,14 +19,13 @@ import Quiz from './Components/Activities/Quiz/Quiz';
 import Extra from "./Components/Activities/Extra/Extra";
 import Shifter from "./Components/Activities/Shifter/Shifter";
 
-
 import Admin from './Components/Admin/Admin';
 import Admin2 from './Components/Admin/Admin2';
 
 import Dashboard from "./Components/Dashboard/Dashboard";
 import Test from "./Components/Test/Test";
 import Profile from './Components/Profile/Profile';
-import EditProfile from './Components/Profile/EditProfile';
+import EditProfile from './Components/Admin/Users/EditProfile/EditProfile';
 import EditQuiz from './Components/Admin/Quizzes/EditQuiz/EditQuiz';
 
 import EditModule from './Components/Admin/Modules/EditModule/EditModule';
@@ -38,7 +37,7 @@ import EditShifter from "./Components/Admin/Shifters/EditShifter/EditShifter"
 import AboutUs from './Components/AboutUs/AboutUs';
 
 import NotFound from './Functionality/Redirects/NotFound';
-import Error from "./Functionality/Redirects/Error"
+import Error from "./Functionality/Redirects/Error";
 
 function App() {
 
